@@ -14,7 +14,7 @@ const Coins = (props) => {
           <p className="hide-mobile">Mkt Cap</p>
         </div>
         {props.coins.map((coins) => {
-          return <CoinItem coins={coins} />;
+          return <CoinItem coins={coins} key={coins.id} />;
         })}
       </div>
     </div>
