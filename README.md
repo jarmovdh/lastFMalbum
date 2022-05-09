@@ -4,7 +4,7 @@ Gemaakt door: Jarmo van der Heul
 Zip-file:
 Klik met de rechtermuisknop op het zip-bestand.
 Klik op Alles uitpakken.
-Er verschijnt een nieuw venster. Hierin kunt u via 'Bladeren' bepalen op welke plek op de computer de uitgepakte map wordt opgeslagen. Standaard is dat dezelfde plek als waar het zip-bestand staat.
+Er verschijnt een nieuw venster. Hierin kan je via 'Bladeren' bepalen op welke plek op de computer de uitgepakte map wordt opgeslagen. Standaard is dat dezelfde plek als waar het zip-bestand staat.
 Klik op Uitpakken.
 
 Download de applicatie van https://code.visualstudio.com/download en installeer deze op je
@@ -15,7 +15,7 @@ Via GitHub
 Je kunt de Git-repository naar een locale Map clonen
 
 Open Visual Studio Code Ga naar Top Menu -> Bestanden -> Map openen.
-Selecteer de map waarin u het gekloonde project wilt downloaden
+Selecteer de map waarin je het gekloonde project wilt downloaden
 Ga naar Hoofdmenu -> Beeld -> Geïntegreerde terminal
 
 Voer de opdracht 'git clone' uit met het pad naar de repository die je wilt klonen in de geïntegreerde terminal.
