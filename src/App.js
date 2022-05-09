@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Routes, Route } from "react-router-dom";
-import Coins from "./components/Coins";
-import Coin from "./routes/Coin";
-import Navbar from "./components/Navbar";
+import Albums from "./components/Albums";
+import Album from "./routes/Album";
+import Title from "./components/Title";
+import GlobalStyles from "./components/styled/Global";
 
 function App() {
-  const [coins, setCoins] = useState([]);
+  const [albums, setAlbums] = useState([]);
 
   const url =
-    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false";
+    "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=Kendrick+Lamar&api_key=cd76f5136476a50cc4e13060b79d3337&format=json";
 
   useEffect(() => {
     axios
       .get(url)
       .then((response) => {
-        setCoins(response.data);
-        // console.log(response.data[0])
+        setAlbums(response.data.topalbums.album);
+        console.log(response.data.topalbums.album);
       })
       .catch((error) => {
         console.log(error);
@@ -25,11 +26,12 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <GlobalStyles />
+      <Title />
       <Routes>
-        <Route path="/" element={<Coins coins={coins} />} />
-        <Route path="/coin" element={<Coin />}>
-          <Route path=":coinId" element={<Coin />} />
+        <Route path="/" element={<Albums albums={albums} />} />
+        <Route path="/album" element={<Album />}>
+          <Route path=":albumName" element={<Album />} />
         </Route>
       </Routes>
     </>
