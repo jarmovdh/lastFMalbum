@@ -18,7 +18,7 @@ Open Visual Studio Code Ga naar Top Menu -> Bestanden -> Map openen.
 Selecteer de map waarin u het gekloonde project wilt downloaden
 Ga naar Hoofdmenu -> Beeld -> Geïntegreerde terminal
 
-Voer de opdracht 'git clone' uit met het pad naar de repository die u wilt klonen in de geïntegreerde terminal.
+Voer de opdracht 'git clone' uit met het pad naar de repository die je wilt klonen in de geïntegreerde terminal.
 
 git clone https://github.com/qwertmedia/lastfm-album.git
 
